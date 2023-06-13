@@ -1,0 +1,419 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://main_scene.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=45]
+size = 26
+outline_size = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 36
+outline_size = 3
+outline_color = Color( 0.12549, 0.470588, 0.0627451, 1 )
+extra_spacing_char = -7
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=46]
+bg_color = Color( 0.913725, 0.670588, 0.207843, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.807843, 0.541176, 0.0313726, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=55]
+bg_color = Color( 0.054902, 1, 0, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id=3]
+Button/fonts/font = SubResource( 5 )
+Button/styles/hover = SubResource( 46 )
+Button/styles/normal = SubResource( 1 )
+Button/styles/pressed = SubResource( 55 )
+
+[sub_resource type="DynamicFont" id=56]
+size = 33
+outline_size = 3
+outline_color = Color( 1, 0.2, 0.2, 1 )
+extra_spacing_char = -7
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=47]
+bg_color = Color( 0.247059, 0.945098, 0.682353, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.00392157, 0.780392, 0.490196, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=54]
+bg_color = Color( 1, 0, 0, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id=8]
+Button/fonts/font = SubResource( 56 )
+Button/styles/hover = SubResource( 47 )
+Button/styles/normal = SubResource( 6 )
+Button/styles/pressed = SubResource( 54 )
+
+[sub_resource type="DynamicFont" id=57]
+size = 33
+outline_size = 3
+outline_color = Color( 0.231373, 0.0705882, 0.219608, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=58]
+bg_color = Color( 0.894118, 1, 0.301961, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 0.756863, 0.890196, 0, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=59]
+bg_color = Color( 0.811765, 0.462745, 0.462745, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id=44]
+Button/fonts/font = SubResource( 57 )
+Button/styles/hover = SubResource( 58 )
+Button/styles/normal = SubResource( 42 )
+Button/styles/pressed = SubResource( 59 )
+
+[sub_resource type="DynamicFont" id=48]
+size = 53
+outline_size = 3
+outline_color = Color( 0.137255, 0.184314, 0.478431, 1 )
+extra_spacing_char = -7
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=49]
+bg_color = Color( 0.992157, 0.466667, 0.627451, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=50]
+bg_color = Color( 0.878431, 0.2, 0.403922, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=53]
+bg_color = Color( 0, 0.0862745, 1, 0.780392 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id=52]
+Button/fonts/font = SubResource( 48 )
+Button/styles/hover = SubResource( 49 )
+Button/styles/normal = SubResource( 50 )
+Button/styles/pressed = SubResource( 53 )
+
+[node name="main" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="output" type="Control" parent="."]
+margin_right = 400.0
+margin_bottom = 218.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="output"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0.105882, 0.00392157, 0.113725, 1 )
+
+[node name="Label" type="Label" parent="output"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -190.0
+margin_top = -99.0
+margin_right = 190.0
+margin_bottom = 99.0
+rect_min_size = Vector2( 380, 198 )
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 45 )
+align = 2
+valign = 2
+autowrap = true
+
+[node name="input" type="Control" parent="."]
+margin_top = 222.0
+margin_right = 400.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 0, 378 )
+mouse_filter = 2
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="input"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0.152941, 0.00392157, 0.164706, 1 )
+
+[node name="input_1" type="GridContainer" parent="input"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -185.0
+margin_top = -164.0
+margin_right = 185.0
+margin_bottom = 164.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/vseparation = 7
+custom_constants/hseparation = 6
+columns = 4
+
+[node name="AC" type="Button" parent="input/input_1"]
+margin_right = 88.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 3 )
+text = "AC"
+
+[node name="BackSpace" type="Button" parent="input/input_1"]
+margin_left = 94.0
+margin_right = 182.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 3 )
+text = "<-----"
+
+[node name="Remainder" type="Button" parent="input/input_1"]
+margin_left = 188.0
+margin_right = 276.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 3 )
+text = "%"
+
+[node name="Division" type="Button" parent="input/input_1"]
+margin_left = 282.0
+margin_right = 370.0
+margin_bottom = 63.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 3 )
+text = "/"
+
+[node name="7" type="Button" parent="input/input_1"]
+margin_top = 70.0
+margin_right = 88.0
+margin_bottom = 133.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "7"
+
+[node name="8" type="Button" parent="input/input_1"]
+margin_left = 94.0
+margin_top = 70.0
+margin_right = 182.0
+margin_bottom = 133.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "8"
+
+[node name="9" type="Button" parent="input/input_1"]
+margin_left = 188.0
+margin_top = 70.0
+margin_right = 276.0
+margin_bottom = 133.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "9"
+
+[node name="Multiply" type="Button" parent="input/input_1"]
+margin_left = 282.0
+margin_top = 70.0
+margin_right = 370.0
+margin_bottom = 133.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 3 )
+text = "X"
+
+[node name="4" type="Button" parent="input/input_1"]
+margin_top = 140.0
+margin_right = 88.0
+margin_bottom = 203.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "4"
+
+[node name="5" type="Button" parent="input/input_1"]
+margin_left = 94.0
+margin_top = 140.0
+margin_right = 182.0
+margin_bottom = 203.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "5"
+
+[node name="6" type="Button" parent="input/input_1"]
+margin_left = 188.0
+margin_top = 140.0
+margin_right = 276.0
+margin_bottom = 203.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "6"
+
+[node name="Minus" type="Button" parent="input/input_1"]
+margin_left = 282.0
+margin_top = 140.0
+margin_right = 370.0
+margin_bottom = 203.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 3 )
+text = "--------"
+
+[node name="1" type="Button" parent="input/input_1"]
+margin_top = 210.0
+margin_right = 88.0
+margin_bottom = 273.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "1"
+
+[node name="2" type="Button" parent="input/input_1"]
+margin_left = 94.0
+margin_top = 210.0
+margin_right = 182.0
+margin_bottom = 273.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "2"
+
+[node name="3" type="Button" parent="input/input_1"]
+margin_left = 188.0
+margin_top = 210.0
+margin_right = 276.0
+margin_bottom = 273.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "3"
+
+[node name="Plus" type="Button" parent="input/input_1"]
+margin_left = 282.0
+margin_top = 210.0
+margin_right = 370.0
+margin_bottom = 273.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 3 )
+text = "+"
+
+[node name="LeftBracket" type="Button" parent="input/input_1"]
+margin_top = 280.0
+margin_right = 88.0
+margin_bottom = 343.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 3
+theme = SubResource( 44 )
+text = "("
+
+[node name="0" type="Button" parent="input/input_1"]
+margin_left = 94.0
+margin_top = 280.0
+margin_right = 182.0
+margin_bottom = 343.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 8 )
+text = "0"
+
+[node name="RightBracket" type="Button" parent="input/input_1"]
+margin_left = 188.0
+margin_top = 280.0
+margin_right = 276.0
+margin_bottom = 343.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 3
+theme = SubResource( 44 )
+text = ")"
+
+[node name="Equal" type="Button" parent="input/input_1"]
+margin_left = 282.0
+margin_top = 280.0
+margin_right = 370.0
+margin_bottom = 343.0
+rect_min_size = Vector2( 88, 63 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme = SubResource( 52 )
+text = "="
